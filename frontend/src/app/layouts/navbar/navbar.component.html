@@ -1,0 +1,8 @@
+<nav class="flex justify-between items-center p-8 bg-slate-700 text-white">
+  <div>logo</div>
+  <ul class="flex justify-center items-center gap-x-5">
+    <li *ngFor="let item of navItems">
+      <a [routerLink]="item.link">{{ item.title }}</a>
+    </li>
+  </ul>
+</nav>
